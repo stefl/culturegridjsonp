@@ -4,7 +4,7 @@
     %link{:rel=>"shortcut icon", :href=>"/favicon.ico"}
     %meta{"http-equiv"=>"Content-Type", :content=>"text/html;charset=utf-8"}
 
-    %title= "Culturegrid JSONP API"
+    %title= "Culturegrid JSONP API proxy"
     
     %link{:href=>'http://fonts.googleapis.com/css?family=Arvo', :rel=>'stylesheet', :type=>'text/css'}
     %style{:type=>"text/css"}
@@ -19,10 +19,12 @@
   %body
     %div#page
       %h1
-        Culturegrid JSONP API
+        Culturegrid JSONP API proxy
 
       %p
-        Let's say you want to consume microformats from an external website using javascript on your own website. Browser security prohibits it.
+        %a{:href=>"http://culturegrid.org.uk"}
+          Culturegrid 
+        is a huge index of cultural assets in the UK (books, photographs, videos, locations...), and has a search API. It's XML, so if you want to do client-side stuff with it in Javascript it's going to be tricky. That's where this API proxy comes in handy.
 
       %h2
         Send a GET request of this format to this little web service:
